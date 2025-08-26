@@ -420,6 +420,20 @@ export default function App() {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleDownloadCV = () => {
+    // Direct download link from Google Drive
+    const cvUrl = 'https://drive.google.com/uc?export=download&id=1H77y2PQvZfhx7y0oLCFd-XdonSdyNHY5';
+    
+    // Create a temporary anchor element to trigger download
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'Md_Aman_CV.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground dark relative overflow-x-hidden">
       <Navigation />
@@ -507,14 +521,8 @@ export default function App() {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               
-
-              <a
-                //  href="https://drive.google.com/file/d/1H77y2PQvZfhx7y0oLCFd-XdonSdyNHY5/view?usp=drivesdk"
-                  href="Md Aman Resume.pdf"
-                 target="_blank" 
-                  rel="noopener noreferrer"
-              >
                 <Button 
+                  onClick={handleDownloadCV}
                   variant="outline" 
                   size="lg"
                   className="group border-2 bg-transparent hover:bg-orange-500/10 px-8 py-6 text-lg transition-all duration-300"
@@ -522,7 +530,6 @@ export default function App() {
                   <Download className="mr-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
                   Download CV
                 </Button>
-              </a>
               </motion.div>
 
               {/* Quick stats */}
