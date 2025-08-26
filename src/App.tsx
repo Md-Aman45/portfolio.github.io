@@ -506,7 +506,14 @@ export default function App() {
                   Get In Touch
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                
+              
+
+              <a
+                //  href="https://drive.google.com/file/d/1H77y2PQvZfhx7y0oLCFd-XdonSdyNHY5/view?usp=drivesdk"
+                  href="Md Aman Resume.pdf"
+                 target="_blank" 
+                  rel="noopener noreferrer"
+              >
                 <Button 
                   variant="outline" 
                   size="lg"
@@ -515,6 +522,7 @@ export default function App() {
                   <Download className="mr-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
                   Download CV
                 </Button>
+              </a>
               </motion.div>
 
               {/* Quick stats */}
