@@ -8,6 +8,8 @@ import { Textarea } from './components/ui/textarea';
 import { Label } from './components/ui/label';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
 import { useEffect, useState } from 'react';
+import profileImage from './assets/profile.jpg';
+
 
 // Navigation Component
 const Navigation = () => {
@@ -568,7 +570,7 @@ export default function App() {
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-yellow-500/20 rounded-2xl rotate-6 blur-xl"></div>
                   <div className="relative bg-background/80 backdrop-blur-sm rounded-2xl p-2 border border-white/10">
                     <ImageWithFallback
-                      src='WhatsApp Image 2025-03-05 at 16.23.04_5d7ee6cf.jpg'
+                      src={profileImage}
                       alt="Md Aman - Full Stack Developer"
                       className="w-full h-auto rounded-xl shadow-2xl"
                     />
