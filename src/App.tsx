@@ -385,8 +385,8 @@ export default function App() {
     {
       title: "E-commerce App with RBAC",
       description: "Full-stack e-commerce platform with role-based access control for customers and admins. Deployed with complete DevOps pipeline.",
-      tech: ["MERN Stack", "Prisma", "Docker", "Kubernetes"],
-      status: "Completed",
+      tech: ["Postgres", "Next.js", "Prisma", "Docker", "Kubernetes"],
+      status: "In Process",
       color: "from-green-500 to-teal-500",
       icon: <Sparkles className="h-6 w-6" />
     },

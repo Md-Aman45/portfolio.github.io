@@ -57,5 +57,5 @@
       port: 3000,
       open: true,
     },
-    base: '/portfolio.github.io/', 
+    base: '/portfolio.github.io/'
   });
